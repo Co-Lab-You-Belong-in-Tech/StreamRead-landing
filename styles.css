@@ -2,21 +2,45 @@
  * Globals
  */
 
+ @font-face {
+  font-family: HandjetBold;
+  src: url('/assets/handjet/fonts/Handjet[EGRD\,ESHP\,wght].ttf') format('truetype'),
+       url('/assets/handjet/fonts/Handjet[EGRD\,ESHP\,wght].woff2') format('woff2-variations');
+  font-variation-settings: 'EGRD' 1, 'ESHP' 2, 'wght' 800;
+}
+
+/* @font-face {
+  font-family: HandjetReg;
+  src: url('/assets/handjet/fonts/Handjet[EGRD\,ESHP\,wght].ttf') format('truetype'),
+       url('/assets/handjet/fonts/Handjet[EGRD\,ESHP\,wght].woff2') format('woff2-variations');
+  font-variation-settings: 'wght' 300, 'EGRD' 1, 'ESHP' 2;
+} */
+
+@font-face {
+  font-family: Inter;
+  src: url('assets/Inter/static/Inter-Regular.ttf');
+}
+
 /* Links */
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: #db3069;
 }
 
 /* Custom default button */
 .btn-secondary,
-.btn-secondary:hover,
 .btn-secondary:focus {
-  color: #333;
+  color: #fff;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
+  background-color: #db3069;
+  border: .05rem solid #db3069;
+  font-family: HandjetBold;
+  font-size: 30px;
+}
+
+.btn-secondary:hover {
+  background-color: #b02755;
 }
 
 
@@ -27,19 +51,20 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  background-color: #eeeaea;
 }
 
 body {
+  font-family: HandjetBold;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
   -ms-flex-pack: center;
   -webkit-box-pack: center;
   justify-content: center;
-  color: #fff;
+  color: black;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  /* box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5); */
 }
 
 .cover-container {
@@ -61,23 +86,33 @@ body {
 .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: 700;
-  color: rgba(255, 255, 255, .5);
+  color: #db3069;
   background-color: transparent;
   border-bottom: .25rem solid transparent;
 }
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255, 255, 255, .25);
+  border-bottom-color: #db3069;
 }
 
 .nav-masthead .nav-link + .nav-link {
   margin-left: 1rem;
 }
 
+a.nav-link {
+  font-size: 25px;
+}
+
 .nav-masthead .active {
-  color: #fff;
-  border-bottom-color: #fff;
+  color: #db3069;
+  border-bottom-color: black;
+}
+
+h3 {
+  font-family: HandjetBold;
+  font-size: 40px;
+  color: black;
 }
 
 @media (min-width: 48em) {
@@ -95,10 +130,37 @@ body {
  */
 .cover {
   padding: 0 1.5rem;
+  background-color: #fff;
+  padding: 10px;
+  border: solid black 5px;
+  border-radius: 2px;
 }
 .cover .btn-lg {
   padding: .75rem 1.25rem;
-  font-weight: 700;
+  /* font-weight: 700; */
+}
+
+h1 {
+  font-family: HandjetBold;
+  font-weight: 900;
+  font-size: 100px;
+  color: black;
+  text-shadow: none;
+}
+
+p.lead {
+  text-shadow: none;
+  font-family: Inter;
+}
+
+div.cover-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #f1b9cc;
+  vertical-align: middle;
+  margin-bottom: 20px;
+  padding-top: 20px;
 }
 
 
@@ -106,5 +168,7 @@ body {
  * Footer
  */
 .mastfoot {
-  color: rgba(255, 255, 255, .5);
+  color: black;
+  text-shadow: none;
+  font-size: 18px;
 }
