@@ -25,7 +25,7 @@
 a,
 a:focus,
 a:hover {
-  color: #db3069;
+  color: white;
 }
 
 /* Custom default button */
@@ -51,7 +51,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #eeeaea;
+  background-color: #db3069;
 }
 
 body {
@@ -68,7 +68,7 @@ body {
 }
 
 .cover-container {
-  max-width: 42em;
+  width: 100%;
 }
 
 
@@ -79,9 +79,9 @@ body {
 
 .masthead {
   margin-bottom: 2rem;
-  background-color: white;
-  border: solid black 3px;
-  border-radius: 2px;
+  background-color: #fafafa;
+  /* border-bottom: solid black 4px; */
+  /* border-radius: 2px; */
 }
 
 .masthead-brand {
@@ -116,7 +116,7 @@ a.nav-link {
 
 h3 {
   font-family: HandjetBold;
-  font-size: 40px;
+  font-size: 2.5em;
   color: black;
 }
 
@@ -135,9 +135,9 @@ h3 {
  */
 .cover {
   padding: 0 1.5rem;
-  background-color: #fff;
+  background-color: #fafafa;
   padding: 10px;
-  border: solid black 5px;
+  border: solid black 4px;
   border-radius: 2px;
 }
 .cover .btn-lg {
@@ -148,7 +148,7 @@ h3 {
 h1 {
   font-family: HandjetBold;
   font-weight: 900;
-  font-size: 100px;
+  font-size: 4em;
   color: black;
   text-shadow: none;
 }
@@ -187,8 +187,35 @@ h2 {
   font-weight: 900;
 }
 
-.fixed-top {
-  left: 20%;
-  right: 20%;
-  top: 2%;
+/* .fixed-top {
+  /* left: 13%;
+  right: 13%; */
+  /* top: 2%; */
+ 
+
+.use-section{ 
+  justify-content: space-between;
+  width: 100%;
+}
+
+.how-to {
+  width: 60%;
+}
+
+.dl {
+  /* margin-bottom: 200px; */
+  /* width: 45%; */
+  border-top: none;
+}
+
+.carousel {
+  border-right: solid black 4px;
+}
+
+.hr {
+  border-bottom: rgba(0, 0, 0, 0.264) solid 2px;
+}
+
+.how-to, .hr {
+  margin-top: 100px;
 }

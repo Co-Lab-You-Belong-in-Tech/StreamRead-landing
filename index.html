@@ -18,8 +18,8 @@
 
   <body class="text-center">
 
-    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-        <header class="masthead mb-auto fixed-top p-2">
+    <div class="cover-container d-flex h-100 mx-auto flex-column">
+        <header class="masthead mb-auto p-2">
             <div class="inner">
               <div class="masthead-brand d-flex flex-row align-items-center">
                 <img src="./assets/Globe icon.svg" height="30px" width="30px">
@@ -32,31 +32,63 @@
               </nav>
             </div>
         </header>
-
+<!-- 
       <div class="mb-5 mt-5"></div>
-      <div class="mb-5 mt-5"></div>
+      <div class="mb-5 mt-5"></div> -->
 
 
-      <main role="main" class="inner cover mt-5 mb-5" data-aos="fade-up" data-aos-duration="800">
-          <div class="cover-group">
-            <img src="./assets/Globe icon.svg" height="90px" width="90px">
-            <h1 class="cover-heading mb-0">StreamRead</h1>
+
+      <div id="carousel" class="carousel slide w-75 align-self-center" data-ride="carousel" data-interval="6000" data-aos="fade-left" data-aos-duration="800">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+          <li data-target="#carousel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="assets/screenshots/Marquee promo tile.png" alt="First slide">
           </div>
-          <p class="lead">Show subtitles, on any streaming service, in any language, all with one extension</p>
-          <p class="lead">
-            <!--Insert chrome store link here once reviewed/published-->
-            <a href="/dir/streamread.zip" download="streamread_chrome" class="btn btn-lg btn-secondary">DOWNLOAD FOR CHROME</a>
-          </p>
-      </main>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="assets/screenshots/Screenshot.png" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="assets/screenshots/Screenshot copy.png" alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="assets/screenshots/Screenshot copy 2.png" alt="Fourth slide">
+          </div>
+        </div>
+      </div>
 
-      <section id="how-to" class="inner cover mt-5 mb-5" data-aos="fade-up" data-aos-duration="800">
+
+
+      <main role="main" class="inner cover align-self-center dl w-75" data-aos="fade-up" data-aos-duration="800">
+        <!-- <div class="cover-group">
+          <img src="./assets/Globe icon.svg" height="70px" width="70px">
+          <h1 class="cover-heading mb-0">StreamRead</h1>
+        </div> -->
+        <h3>Download for Chrome</h3>
+        <p class="lead">
+          <!--Insert chrome store link here once reviewed/published-->
+          <a href="/dir/streamread.zip" download="streamread_chrome" class="btn btn-lg btn-secondary">v1.01</a>
+        </p>
+      </main>
+      
+      <span class="hr"></span>
+
+      <section id="how-to" class="inner cover tut-sec align-self-center how-to" data-aos="fade-right" data-aos-duration="800">
         <h2 class="text-left pl-2">Tutorial</h2>
         <div class="embed-responsive embed-responsive-16by9">
           <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wZ4gUn5HxVs"></iframe>
         </div>
       </section>
 
-      <footer class="mastfoot mt-auto">
+      <span class="hr"></span>
+
+
+
+      <footer class="mastfoot mt-3">
         <div class="inner">
           <p>Landing page for <a href="#">StreamRead</a>, by <a href="https://github.com/nekacurry">@nekacurry</a>.</p>
         </div>
@@ -73,6 +105,11 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+
+      window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+      }
     </script>
+
   </body>
 </html>
